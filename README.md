@@ -1,16 +1,49 @@
-# React + Vite
+# 📝 Todoist Clone на React + Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CodeFactor](https://www.codefactor.io/repository/github/lkoshil/todoist-clone/badge)](https://www.codefactor.io/repository/github/lkoshil/todoist-clone)
 
-Currently, two official plugins are available:
+Полнофункциональное веб-приложение для управления задачами с авторизацией пользователей, облачной базой данных и real-time обновлениями.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠 Стек технологий
 
-## React Compiler
+| Категория | Технологии |
+|-----------|------------|
+| **Frontend** | React 18, Vite, React Router |
+| **Backend** | Firebase (BaaS) |
+| **База данных** | Firebase Firestore (NoSQL) |
+| **Авторизация** | Firebase Authentication |
+| **Стили** | CSS3 (градиенты, адаптив) |
+| **Деплой** | Vercel |
+| **Анализ кода** | CodeFactor |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🔗 Ссылки
 
-## Expanding the ESLint configuration
+- **GitHub:** https://github.com/lKoshil/todoist-clone
+- **Деплой:** https://todoist-clone-delta.vercel.app/
+- **CodeFactor:** [![CodeFactor](https://www.codefactor.io/repository/github/lkoshil/todoist-clone/badge)](https://www.codefactor.io/repository/github/lkoshil/todoist-clone)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Реализованный функционал
+
+### 🔐 Авторизация
+- Регистрация новых пользователей (email + пароль)
+- Вход в систему
+- Выход из аккаунта
+- Защищённые маршруты (ProtectedRoute)
+- Автоматический редирект на `/login` при отсутствии авторизации
+
+###  Управление задачами (CRUD)
+-  **Создание** задач с названием, описанием и приоритетом
+-  **Просмотр** списка задач в реальном времени
+-  **Редактирование** существующих задач
+-  **Удаление** задач с подтверждением
+-  **Отметка** задач как выполненных (чекбокс)
+
+### 🎨 Дополнительные фичи
+- Три уровня приоритета (низкий/средний/высокий) с цветовой индикацией
+- Счётчик задач в заголовке
+- Real-time обновления через Firestore onSnapshot
+- Фильтрация задач по текущему пользователю
+- Адаптивный дизайн
+- Визуальная обратная связь (hover-эффекты, disabled-состояния)
+
+## 🏗 Архитектура проекта
